@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GIVP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #000000;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url("imatges/fons.jpg")
+ 
+}
+  
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#SOBRE NOSALTRES" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> SOBRE NOSALTRES</a>
+    <a href="#PROJECTES" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTES</a>
+    <a href="#MAPES" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-map-marker"></i>MAPES</a>
+    <a href="#CONTACTE" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>CONTACTE</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#sobre nosaltres class="w3-bar-item w3-button" onclick="toggleFunction()">SOBRE NOSALTRES</a>
+    <a href="#projectes" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTES</a>
+    <a href="#mapes" class="w3-bar-item w3-button" onclick="toggleFunction()">MAPES</a>
+    <a href="#contacte" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTE</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="SOBRE NOSALTRES">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">GRUP INVESTIGACIÓ <span class="w3-hide-small">VINYES</span> DEL PRIORAT</span>
+  </div>
+</div>
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">SOBRE NOSALTRES</h3>
+  <p style="text-align: center;">El Priorat és una terra que s’associa a vins d’anomenada mundial i un paisatge agrícola viu i d’una gran bellesa, amb Siurana i la cartoixa d’Escaladei com els llocs d’interès més destacats.
+    Però aquesta és una comarca més diversa del que diuen els manuals, i el Priorat també és una constel·lació de petits pobles amb encant, una xarxa infinita de camins, el Parc Natural de la Serra de Montsant, l’espai protegit de la Serra de Llaberia, ermites i museus que parlen d’un passat etern, jaciments antics, rutes de l’oli, rutes del vi, rutes en cotxe, rutes en btt...Per aquest motiu al GIVP volem donar a conèixer la comarca i l'estreta relació de les persones amb el vi. </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Arnau Fargas</b></p><br>
+      <img src="imatges/arnau.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300" height="300">
+      <p>Arnau Fargas gràcies als seus grans coneixments de la comarca s'encarrega de cartografiar i l'anàlisi de camp a la comarca així com a les vinyes que podem trobar arreu d'ella.</p>
+    </div>
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Sergi Mendez</b></p><br>
+      <img src="imatges/mendez.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300" height="300">
+      <p>Sergi Mendez es el President del Consell Comarcal del Priorat i respnsable de politiques de gestió i ordenació de les vinyes així com l'especialitzat en relacions institucionals.</p>
+    </div>
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p style="text-align: center;"></p><b><i class="fa fa-user w3-margin-right"></i>David Azuara</b></p><br>
+      <img src="imatges/azuara1.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300" height="300">
+      <p >David Azuara s'encarrega de les  bases de dades i el seu tractament per posteriorment l'elaboració de mapes i altres fonts gràfiques per a l'estudi de les vinyes al Priorat.</p>
+    </div>
+    <!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-large" id="PROJECTES">
+  <h3 style="text-align: center;">PROJECTES</h3>
+  <p style="text-align: center;">El GIVP cartografiem i analitzem la distribució de les vinyes de la DO Monstant i la DOQ Priorat per entendre millor l'excel·lència dels vins de la comarca.<br> Actualment hem realitzat un projecte per digitalitzar i cartografiar les vinyes a la comarca tal i com podem veure en el mapa adjunt.</em></p><br>
+  <img src="imatges/MapaPriorat.jpg.png" style="width: 100%;" alt="Distribució de les Vinyes a la comarca del Priorat" />
+  <p class="w3-center"><p style="text-align: center;">D'altra banda s'esta portant a terme un projecte denominat Projecte ViJove per fomentar l'ocupació al sector al Priorat.<br> En el següent link podeu veure el projecte que s'esta duent a terme.</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de PDF con etiqueta Object</title>
+</head>
+<body>
+    <!-- Utiliza la etiqueta <object> para mostrar el PDF -->
+    <a href="documents/PROJECTE VIJOVE.pdf">PROJECTE ViJove</a>
+    </object>
+</body>
+<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+   <div class="w3-row-padding w3-center">
+    <h4 class="w3-center">ENTITATS COL·LABORADES</h4>
+    <div class="w3-col m3">
+      <img src="imatges/domonstant.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="DO MONTSANT">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="imatges/doqpri.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="DOQ PRIORAT">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="imatges/consellcomarcal.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="CONSELL COMARCAL DEL PRIORAT">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="imatges/priorarturisme.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="PRIORAT TURISME">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="imatges/VITEC.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="VITEC">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="imatges/depgeo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="DEPARTAMENT DE GEOGRAFIA DE LA URV">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="imatges/incavi.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="INSITUT CATALÀ DE LA VINYA I EL VI">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="imatges/gencat.jpg".jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="GENERALITAT DE CATALUNYA">
+    </div>
+  </div>
+</div>
+<!-- Container (Portfolio Section) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa OSM</title>
+    <!-- Agrega la librería Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+<!-- Container (Map Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="MAPES"
+  <style>
+    <h4 class="w3-center"><p class="w3-center">MAPES</p></h4>
+  </style>
+  <p class="w3-center">En el mapa següent podem observar les 3 localitzacions a on treballem, en primer lloc el Campus de Geografia i Turisme de la URV a Vila-seca, d'altra banda a la Finca dels Masos del Celler Capafonts-Ossò, i una finca experimental Vijove a Falset.</p>
+    <!-- Crea un contenedor para el mapa -->
+    <div id="map" style="height: 400px;"></div>
+
+    <script>
+        // Inicializa el mapa en una ubicación específica
+        var mapa = L.map('map').setView([41.102628, 1.147064], 13);
+
+        // Agrega una capa de OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(mapa);
+
+        // Agrega un marcador
+        L.marker([41.102628, 1.147064]).addTo(mapa)
+            .bindPopup('Campus Geografia i Turisme Universitat Rovira i Virgili, Vila-seca')
+            .openPopup();
+        // Agrega un marcador
+        L.marker([41.173790, 0.827422]).addTo(mapa)
+            .bindPopup('Finca dels Masos,Cellers Capafonts-Ossó, Falset')
+            .openPopup();
+        // Agrega un marcador
+        L.marker([41.154812, 0.824627]).addTo(mapa)
+            .bindPopup('Finca Experimental Vijove, Falset')
+            .openPopup();
+    </script>
+</body>
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACTE</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="CONTACTE">
+  <h5 class="w3-center">A ON ENS POT TROBAR?</h5>
+  <p class="w3-center"><em>Ens agradaria comptar amb tu!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="imatges/ubi.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Facultat de Turisme i Geografia URV, Vila-seca<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telef: +34 699 567 654<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: givp@gmail.com<br>
+      </div>
+      <p>Per més informació o contacti amb nosaltres:<p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> ENVIAR MISSATGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Tornar a inici</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </div>
+</footer>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</body>
+</html>
